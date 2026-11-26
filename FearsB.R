@@ -14,7 +14,18 @@ library(spatstat)
 library("foreign") 
 
 
-##### fears  data data set I x P matrix only 200 observations!
+## for start values:
+source("Responsefunctions.R")
+source("Difficultyfunctions.R")
+source("ProgramsBsplinesPureResp.R")
+source("Posteriorgen.R")
+source("Posteriorgen.R")
+
+## for Bayes
+source("ProgrThresholdsBayesFlex.R")
+
+
+##### fears  data data set I x P matrix 
 dat <- read.table("fear", header=TRUE,sep= " ")
 ###################
 
